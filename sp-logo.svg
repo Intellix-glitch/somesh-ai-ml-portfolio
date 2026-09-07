@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="sptile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4aa9ff"/>
+      <stop offset=".45" stop-color="#8a5cff"/>
+      <stop offset="1" stop-color="#ff5ec8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark navy outer plate -->
+  <rect width="200" height="200" rx="46" fill="#181830"/>
+
+  <!-- gradient squircle inset -->
+  <rect x="12" y="12" width="176" height="176" rx="40" fill="url(#sptile)"/>
+
+  <!-- chunky upright SP monogram -->
+  <g fill="none" stroke="#1b1b38" stroke-width="21" stroke-linecap="butt" stroke-linejoin="miter">
+    <!-- S -->
+    <path d="M94 64 H58 Q44 64 44 76 Q44 87 58 88 L80 90 Q94 91 94 103 Q94 114 80 114 H44"/>
+    <!-- P (stem + bowl + sweeping leg) -->
+    <path d="M110 136 V64 H140 Q156 64 156 79 Q156 94 140 94 H110"/>
+    <path d="M110 136 L128 100"/>
+  </g>
+</svg>
