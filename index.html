@@ -2479,13 +2479,120 @@ body::after {
   }
 
   .hero-stats {
-    gap: var(--space-xl);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-lg) var(--space-md);
+  }
+
+  .hero-stat .lbl {
+    font-size: 0.62rem;
+    line-height: 1.45;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-head {
+    margin-bottom: var(--space-xl);
+  }
+
+  .section-title-big {
+    font-size: clamp(1.8rem, 8vw, 2.7rem);
+  }
+
+  .section-subtitle {
+    font-size: 0.94rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--head-height) + 2.5rem);
+    padding-bottom: 3rem;
+  }
+
+  .hero-grid {
+    gap: var(--space-2xl);
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+    margin-bottom: var(--space-xl);
+  }
+
+  .hero-aside {
+    max-width: min(100%, 300px);
+    margin-top: 0;
+  }
+
+  .photo-card {
+    padding: var(--space-md);
+  }
+
+  .project-inner {
+    gap: var(--space-lg);
+  }
+
+  .project-name {
+    font-size: clamp(1.15rem, 5.4vw, 1.45rem);
+  }
+
+  .project-one {
+    font-size: 0.94rem;
+  }
+
+  .project-banner {
+    max-height: 240px;
+  }
+
+  .project-link {
+    min-height: 44px;
+  }
+
+  .project-visual {
+    min-height: 180px;
+  }
+
+  .pipeline-viz {
+    padding: var(--space-md);
+  }
+
+  .education-list {
+    gap: var(--space-md);
+  }
+
+  .edu-card {
+    padding: var(--space-lg);
+  }
+
+  .tool-group {
+    padding: var(--space-lg);
+  }
+
+  .footer-content {
+    border-radius: 20px;
+    padding: var(--space-3xl) var(--space-lg);
+  }
+
+  .contact-avail {
+    font-size: 0.65rem;
+    padding: 0.55rem 0.85rem;
+  }
+
+  .contact-email {
+    min-width: 0;
+    font-size: clamp(0.9rem, 4vw, 1.15rem);
+    padding: 0.9rem 1rem;
+  }
+
+  .contact-phone {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 400px) {
   .container {
-    padding: 0 var(--space-lg);
+    padding: 0 1rem;
   }
 
   .hero-actions {
@@ -2510,6 +2617,23 @@ body::after {
     width: 17px;
     height: 17px;
   }
+
+  .pipeline-viz {
+    padding: var(--space-sm);
+  }
+
+  .pipe-arrow {
+    width: 18px;
+    margin: 0 2px;
+  }
+
+  .pipe-arrow::after {
+    right: -1px;
+  }
+
+  .project-metrics {
+    column-gap: var(--space-md);
+  }
 }
 
 /* ============================================================
@@ -2521,6 +2645,12 @@ body::after {
 }
 
 @media (prefers-reduced-motion: reduce), (hover: none) {
+  .project-card:hover,
+  .tool-group:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
   .photo-card:hover {
     transform: none;
     box-shadow: none;
@@ -3151,19 +3281,21 @@ body::after {
 
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">Aug – Oct 2023</span>
-          <h3 class="timeline-role">IoT &amp; ML Project Developer Intern</h3>
-          <p class="timeline-company">Bolt IoT</p>
+          <span class="timeline-date">Aug – Sep 2026</span>
+          <h3 class="timeline-role">Data Analytics Intern — IBM SkillsBuild with AI</h3>
+          <p class="timeline-company">IBM SkillsBuild · BharatCares · AICTE</p>
           <ul class="dot-list">
-            <li>Designed an Air Quality Monitoring System using Bolt IoT hardware with MQ135 and DHT11 sensors.</li>
-            <li>Built a Python-based cloud monitoring dashboard with automated alerts and deployed a Linear Regression model for real-time AQI prediction.</li>
+            <li>Completed a six-week internship focused on data analytics and AI applications.</li>
+            <li>Analyzed 1M+ transactions using Python, Pandas, and NumPy; performed EDA, RFM segmentation, and logistic regression churn prediction, and developed a six-page Streamlit dashboard for sales and customer analytics.</li>
           </ul>
           <div class="timeline-tech">
-            <span>Bolt IoT</span>
             <span>Python</span>
-            <span>MQ135</span>
-            <span>DHT11</span>
-            <span>Linear Regression</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>EDA</span>
+            <span>RFM</span>
+            <span>Logistic Regression</span>
+            <span>Streamlit</span>
           </div>
         </div>
       </div>
